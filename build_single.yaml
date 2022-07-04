@@ -1,9 +1,0 @@
-steps:
-- name: 'bash'
-  args: ['ls']
-- name: 'maven'
-  entrypoint: 'mvn'
-  args: ['test', '-P', 'local']
-  env:
-  - 'BROWSERSTACK_USERNAME=${_BROWSERSTACK_USERNAME}'
-  - 'BROWSERSTACK_ACCESS_KEY=${_BROWSERSTACK_ACCESS_KEY}'
